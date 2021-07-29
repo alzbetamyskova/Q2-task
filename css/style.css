@@ -9,8 +9,119 @@ html {
 }
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 26px;
   min-width: -webkit-min-content;
   min-width: -moz-min-content;
   min-width: min-content;
+  margin: 0;
+  color: #7D7D7D;
+}
+
+.container {
+  margin: 60px 20px;
+  max-width: 460px;
+}
+
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin: 60px 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
+.opening {
+  position: relative;
+}
+
+.opening__picture {
+  position: relative;
+}
+
+.opening__img {
+  position: absolute;
+  top: auto;
+  left: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.opening__offer {
+  position: absolute;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 0px 0px 20px 1px rgba(150, 150, 150, 0.2);
+          box-shadow: 0px 0px 20px 1px rgba(150, 150, 150, 0.2);
+}
+
+.opening__days {
+  margin: 0;
+  color: #0D9206;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.opening__days::after {
+  content: "";
+  display: block;
+  width: 180px;
+  border-bottom: 3px solid #FF8800;
+}
+
+.opening__price {
+  margin: 0;
+  color: #000000;
+  font-size: 32px;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__title {
+  color: #000000;
+  font-size: 90px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.main__descr {
+  border-left: 3px solid #0D9206;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.main__button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #FF8800;
+}
+
+.main__button:hover {
+  background-color: #0D9206;
+}
+
+.main--green {
+  font-family: 'Square721 Bt', sans-serif;
+  font-size: 84px;
+  color: #0D9206;
 }
 /*# sourceMappingURL=style.css.map */

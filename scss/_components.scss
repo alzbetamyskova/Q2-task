@@ -1,0 +1,81 @@
+
+.opening {
+  position: relative;
+
+  &__picture {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: auto;
+    left: auto;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &__offer {
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 20px 1px rgba(150, 150, 150, 0.2);
+  }
+
+  &__days {
+    margin: 0;
+    color: $green;
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  &__days::after {
+    content: "";
+    display: block;
+    width: 180px;
+    border-bottom: 3px solid $orange;
+  }
+
+  &__price {
+    margin: 0;
+    color: $black;
+    font-size: 32px;
+  }
+}
+
+.main {
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 90px;
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  &__descr {
+    border-left: 3px solid $green;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__button {
+    width: max-content;
+    color: $white;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: $orange;
+  }
+
+  &__button:hover {
+    background-color: $green;
+  }
+
+  &--green {
+    font-family: 'Square721 Bt', sans-serif;
+    font-size: 84px;
+    color: $green;
+  }
+}
